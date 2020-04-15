@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Deidre_MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Employee" asp-action="Index">Deidre_MVC</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Create">Registration Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div>
+            <div class="container" style="background-color: #8080804f;">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <span class="mb-0">© 2020 Copyright: Deidre_MVC </span>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/deidre.senrasmyth" class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a href="https://www.linkedin.com/in/deidre-smyth-bb029a35/" class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Git Hub-->
+                        <a href="https://github.com/deidresenrasmyth?tab=repositories" class="ins-ic">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

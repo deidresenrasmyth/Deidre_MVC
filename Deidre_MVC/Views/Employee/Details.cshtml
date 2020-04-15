@@ -1,0 +1,42 @@
+﻿@model Deidre_MVC.Models.Employeeinfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>Employee Information</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <span>
+            @Model.Name
+        </span>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <span>
+            @Model.Gender
+        </span>
+        <dt>
+            @Html.DisplayNameFor(model => model.Company)
+        </dt>
+        <span>
+            @Model.Company
+        </span>
+        <dt>
+            @Html.DisplayNameFor(model => model.Departament)
+        </dt>
+        <span>
+            @Model.Departament
+        </span>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID"><button class="btn btn-success">Edit</button></a>
+    <a asp-action="Index"><button class="btn btn-secondary">Back Home</button></a>
+</div>

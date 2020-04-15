@@ -1,0 +1,23 @@
+USE [EMPLOYEEDB]
+GO
+
+/****** Object:  Table [dbo].[Employee]    Script Date: 15/04/2020 19:41:51 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Employee](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](150) NULL,
+	[Gender] [varchar](50) NULL,
+	[Company] [varchar](150) NULL,
+	[Departament] [varchar](150) NULL,
+ CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+

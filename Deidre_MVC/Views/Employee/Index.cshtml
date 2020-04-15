@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Deidre_MVC.Models.Employeeinfo>
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container-fluid" style="text-align: center;">
+        <img class="img-fluid" src="~/img/employee_home.jpg" />
+    </div>
+
+@*For Display Employee Info*@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Company)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Departament)
+            </th>
+            <th>
+                <a asp-action="Create"><i class="fas fa-plus-square"></i></a> ADD
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => emp.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => emp.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => emp.Company)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => emp.Departament)
+            </td>
+           <td>
+                <a asp-action="Edit" asp-route-id="@emp.ID"><i class="fas fa-edit"></i></a>
+                <a asp-action="Details" asp-route-id="@emp.ID"><i class="fas fa-eye"></i></a>
+                <a asp-action="Delete" asp-route-id="@emp.ID"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
