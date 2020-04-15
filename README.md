@@ -1,7 +1,8 @@
 # Deidre_MVC
-Deidre_MVC
+Project Deidre_MVC
 
 # Step 1
+In SQL SERVER:
 Create Schema EMPLOYEEDB
 
 # Step 2
