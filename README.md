@@ -6,10 +6,10 @@ In SQL SERVER:
 Create Schema EMPLOYEEDB
 
 # Step 2
-Execute Script in folde Script/Create_Table_Employeedb 
+Execute Script in folder Script/Create_Table_Employeedb 
 
 # Step 3
-Execute Script in folde Script/: 
+Execute Script in folder Script/: 
 - Create_SP_GetAllEmployee.sql
 - Create_SP_GetEmployeeById.sql
 - Create_SP_InsertEmployee.sql
