@@ -2,8 +2,8 @@
 Project Deidre_MVC
 
 # Step 1
-In SQL SERVER:
-Create Schema EMPLOYEEDB
+-In SQL SERVER:
+-Create Schema EMPLOYEEDB
 
 # Step 2
 Execute Script in folder Script/Create_Table_Employeedb 
@@ -19,12 +19,12 @@ Execute Script in folder Script/:
 # Step 4
 Open the Project in Visual Studio.
 
-In Models/EmployeeDAL.cs
-Change value:
-       const string serverName for your Server Name in SQL Server Database
-       const string userName   for your User Name in SQL Server Database
-       const string password for you Password in SQL Server Database
+-In Models/EmployeeDAL.cs
+-Change value:
+       --const string serverName for your Server Name in SQL Server Database
+       --const string userName   for your User Name in SQL Server Database
+       --const string password for you Password in SQL Server Database
        
 # Step 5
-In Visual Studio.
-Start Project botton play -> "IIS Express"
+-In Visual Studio.
+-Start Project botton play -> "IIS Express"
